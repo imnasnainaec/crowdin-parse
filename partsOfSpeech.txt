@@ -1,0 +1,220 @@
+Before doing a substring check, can split string by (punctuation,whitespace,词) and do equality check on the first string.
+Afterwords/Otherwise, the following must be done in this order:
+
+CHECK FIRST WITH NO AMBIGUITY
+  CLASSIFIER; EXISTENTIAL_MARKER; EXPLETIVE; INTERJECTION; PRENOUN; PREVERB
+CHECK NEXT CAREFULLY TO AVOID CONFLATION
+  PARTICIPLE; PARTICLE
+SOME BACK-AND-FORTH CHECKS TO UNTANGLE
+  DETERMINER; PRO-FORM
+CAN CHECK NOW THAT DETERMINER & PRO-FORM ARE CHECKED
+  ADJECTIVE; ADPOSITION; CONNECTIVE; NOUN
+CAN CHECK AFTER CONNECTIVE
+  ADVERB
+CHECK LAST
+  VERB
+
+
+ADJECTIVE
+[= adj,形]
+> adj,形
+(check after PRO-FORM to avoid Pro-Adjective)
+adj,Adjective,Adjectivo,Adjectif,Adjetivo
+形,形容词
+
+ADPOSITION
+[= adp,adpos,pos,post,prep]
+> adp,pos,prep,置
+(check after PRO-FORM to avoid poss)
+adp,Adposition,Adposição
+adpos,Adposición
+位置,位置词
+post,Postposition,Postposición
+pos,Posposição
+后置,后置词
+prep,Preposition,Preposición
+prép,Préposition,Preposição
+前置,前置词
+
+ADVERB
+[= adv,副]
+> adv,副
+(check after CONNECTIVE to avoid adverbializer, PRO-FORM to avoid pro-adverb)
+adv,Adverb,Adverbio,Adverbe,Advérbio
+副,副词
+
+CLASSIFIER
+[= class,clf,clfnom,nclf,类,名词类]
+> clf,class,类
+clf,Classifier
+class,Classificateur,Classificador
+类别,类别词
+nclf,Noun classifier
+class.nom,Classificateur nominal
+clfnom,Classificador Nominal
+名词类別词
+
+CONNECTIVE
+[= comp,con,conn,连]
+> con,izer,isateur,izador,comp,rel,连
+(check after PRO-FORM to avoid relative pronouns)
+conn,Connective,Connecteur
+con,Conectivo
+连,连词
+*conn,* connective
+conn.*,Connecteur *
+conjcoor,Conectivo coordenativo
+并列连词
+concorr,Conjunção correlativa
+关系连词
+consub,Conectivo subordenativo
+从属连词
+advlizer,Adverbializer,Adverbializador
+adverbialisateur,Adverbialisateur
+副词化连词
+comp,Complementizer
+compltr,Complémenteur
+conjcom,Complementizador
+补语连词
+rel,Relativizer
+relativis,Relativiseur
+reltvzr,Relativizador
+关系从句连词
+
+DETERMINER
+[=art,def,dem,det,indf,]
+> det,art,def,indf,indef,dem,quant,num,定,冠,指示,数
+det,Determiner,Determinante
+dét,Déterminant
+限定,限定词
+art,Article,Artículo,Artigo
+冠,冠词
+art.*,Article *
+art*,Artigo *
+def,Definite article
+déf,Artículo definido
+定冠词
+indf,Indefinite article,Artículo indefinido
+不定冠词
+dem,Demonstrative,Démonstratif,Demonstrativo
+指示代,指示代词
+quant,Quantifier,Quantificateur,Quantificador
+数量词
+num,Numeral,Numéral
+数,数词
+*num,* numeral
+num.*,Numéral *
+num*,Numeral *
+*数词
+
+EXISTENTIAL_MARKER
+> exist,存在
+existmrkr,Existential marker
+marq.exist,Marqueur existentiel
+marcexist,Marcador existencial
+存在标记
+
+EXPLETIVE
+> expl,填补
+expl,Expletive,Explétif,Expletivo
+填补词
+
+INTERJECTION
+> interj,叹
+interj,Interjection,Interjección,Interjeição
+叹,叹词
+
+NOUN
+= n
+> noun,nom,ger,prop,subs,sus,名,体
+(check after PRENOUN, PRO-FORM, PARTICLE checks)
+n,Noun,Nom,Nome
+sus,Nombre
+名,名词
+nom,Nominal
+名词
+ger,Gerund,Gérundif,Gerúndio
+动名词
+nprop,Proper noun,Nome Próprio
+专有名,专有名词
+n.*,Nom *
+subs,Substantive,Substantivo
+subst,Substantif
+体词
+
+PARTICIPLE
+= part
+> ptcp,partici,分
+ptcp,Participle,Participio
+part,Participe,Particípio
+分词
+
+PARTICLE
+= partic,q,疑问
+> prt,particl,particu,marc,mark,助
+(check after EXISTENTIAL_MARKER)
+prt,Particle,Partícula
+partic,Particule
+助词
+*prt,* particle
+partic.*,Particule *
+prt*,Partícula *
+名词性助词
+动词性助词
+q,Question particle,Marcador interrogativo
+疑问,疑问助词
+
+PRENOUN
+> pren,名词前
+prenoun,Prenoun,
+pren,Prenome
+名词前词
+
+PREVERB
+> prev,动词前
+preverb,Preverb
+动词前词
+
+PRO-FORM
+> pro,interr,indf,pers,emph,poss,refl,recp,代,领,疑问
+(check after PARTICLE to avoid Marcador interrogativo, 疑问 (Question marker))
+(check pro before DETERMINER to avoid articles with the same modifiers)
+(check 代 after DETERMINER)
+pro-*,Pro-*,Pró-*
+proforme,Proforme
+proforma,Proforma
+替代词
+interrog,Interrogative pro-form
+疑问词,疑问替代词
+代形容词
+代副词
+pro*,Proforma *
+pro,Pronoun,Pronombre
+pron,Pronome
+代,代词
+*代词,*代词
+*代,*代词
+*pro,* pronoun,Pronombre *
+pron.*,Pronom *
+pron*,Pronome *
+pers,emph,poss,refl,recp
+pro.refl,Pronombre reflexivo
+rel,Pronombre relativo (Spanish rel conflicts with English for Relativizer)
+领有,领有代词
+
+VERB
+= v,vd,vi,vt
+> cop,verb,trans,动
+(check after PREVERB and ADVERB checks)
+(check after NOUN and PARTICLE to avoid 动)
+v,Verb,Verbo,Verbe
+动,动词
+* Verb, Verbo *
+v.*, Verbe *
+cop,Copulative verb,Verbo copulativo
+系动词
+vd,Ditransitive verb
+vb,Verbo bitransitivo,Verbo bitransitivo
+vi,Intransitive verb,Verbo intransitivo
+vt,Transitive verb,Verbo transitivo
+*及物动,*及物动词

@@ -1,0 +1,55 @@
+{
+  "name": "react-localize-crowdin",
+  "version": "2.0.0",
+  "description": "CLI tools to support localizing react apps with Crowdin",
+  "author": "Jason Naylor",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "crowdin",
+    "l10n",
+    "i18n"
+  ],
+  "bugs": {
+    "url": "https://github.com/sillsdev/react-localize-crowdin/issues"
+  },
+  "homepage": "https://github.com/sillsdev/react-localize-crowdin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sillsdev/react-localize-crowdin.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "js2xmlparser": "^4.0.1",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
+    "prettier-check": "prettier --check \"./**/*.{js,jsx,ts,tsx,json}\"",
+    "test": "mocha .",
+    "test:coverage": "nyc --reporter=cobertura mocha ."
+  },
+  "bin": {
+    "rlr-crowdin": "./index.js"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "commonjs": true,
+      "jasmine": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2019
+    },
+    "rules": {}
+  }
+}
