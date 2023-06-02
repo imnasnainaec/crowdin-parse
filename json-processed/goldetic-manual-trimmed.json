@@ -1,0 +1,149 @@
+[
+  {
+    "Classifier": {
+      "contains": ["clas", "clf", "клас", "类"],
+      "equals": ["сч"]
+    },
+    "ExistentialMarker": {
+      "contains": ["exist", "экз", "存在"],
+      "equals": []
+    },
+    "Expletive": {
+      "contains": ["expl", "форм", "填补"],
+      "equals": []
+    },
+    "Interjection": {
+      "contains": ["interj", "межд", "叹"],
+      "equals": []
+    },
+    "Noun": {
+      "contains": ["prop"],
+      "equals": []
+    },
+    "Participle": {
+      "contains": ["ptcp", "partici", "прич"],
+      "equals": ["part", "分", "分词"]
+    },
+    "Prenoun": {
+      "contains": ["pren", "名词前"],
+      "equals": []
+    },
+    "Preverb": {
+      "contains": ["prev", "动词前"],
+      "equals": []
+    }
+  },
+
+  {
+    "Particle": {
+      "contains": ["prt", "particl", "particu", "marc", "mark", "част", "助"],
+      "equals": ["partic", "q", "во", "疑问"]
+    }
+  },
+
+  {
+    "Determiner": {
+      "contains": ["指示"],
+      "equals": []
+    }
+  },
+
+  {
+    "Pro-form": {
+      "contains": [
+        "pro",
+        "interr",
+        "pers",
+        "emph",
+        "poss",
+        "refl",
+        "recp",
+        "вопр",
+        "мест",
+        "代",
+        "领",
+        "疑问"
+      ],
+      "equals": ["pos"]
+    }
+  },
+
+  {
+    "Determiner": {
+      "contains": [
+        "det",
+        "art",
+        "def",
+        "ind",
+        "dem",
+        "quant",
+        "num",
+        "арт",
+        "указ",
+        "числ",
+        "квант",
+        "опр",
+        "定",
+        "冠",
+        "数"
+      ],
+      "equals": []
+    }
+  },
+
+  {
+    "Adposition": {
+      "contains": ["adp", "pos", "prep", "лог", "предл", "置"],
+      "equals": []
+    }
+  },
+
+  {
+    "Adjective": {
+      "contains": ["adj", "прил", "形"],
+      "equals": []
+    },
+    "Connective": {
+      "contains": [
+        "com",
+        "con",
+        "iz",
+        "isateur",
+        "rel",
+        "изатор",
+        "союз",
+        "连"
+      ],
+      "equals": []
+    },
+    "Noun": {
+      "contains": [
+        "noun",
+        "nom",
+        "ger",
+        "subs",
+        "sus",
+        "гер",
+        "сущ",
+        "имя",
+        "собс",
+        "名",
+        "体"
+      ],
+      "equals": ["n"]
+    }
+  },
+
+  {
+    "Adverb": {
+      "contains": ["adv", "нареч", "副"],
+      "equals": []
+    }
+  },
+
+  {
+    "Verb": {
+      "contains": ["cop", "v", "trans", "гл", "动"]
+    }
+  }
+]

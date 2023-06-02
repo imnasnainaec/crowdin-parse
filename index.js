@@ -6,33 +6,40 @@ const goldetic = require("./goldetic");
 
 function consoleUsage() {
   console.log("Command line utilities for working with Crowdin and react:");
-  console.log("Usage: -goldetic [xlf file] [json file]");
-  console.log("\tConverts GOLDEtic xlf file from Crowdin to json file.");
+  console.log("Usage: -goldetic [xlf file] ... [xlf file]");
+  console.log("\tConverts GOLDEtic xlf files from Crowdin to json file.");
+  console.log("Usage: -minimize [json file]");
+  console.log(
+    "\tConverts the json result of -goldetic to a set a minimal strings."
+  );
 }
 
 const myArgs = process.argv.slice(2);
-if (myArgs.length < 3) {
+if (myArgs.length < 2) {
   consoleUsage();
 } else {
   switch (myArgs[0]) {
     case "-goldetic":
-      if (myArgs.length > 3) {
-        console.log("Too many arguments.");
-      } else {
-        xlfToJson(myArgs[1], myArgs[2]);
-      }
+      xlfToJson(myArgs.slice(1));
+      break;
+    case "-minimize":
+      minimizeJson(myArgs[1]);
       break;
     default:
       consoleUsage();
   }
 }
 
-function xlfToJson(xlfFilename, jsonFilename) {
+function xlfToJson(xlfFilenames) {
   const options = { compact: true, ignoreComment: true, spaces: 4 };
-  const xlfData = JSON.parse(
-    xmlJsConvert.xml2json(fs.readFileSync(xlfFilename), options)
-  );
-  const jsonData = goldetic.convertToJson(xlfData);
+  const jsonData = {};
+  for (const xlfFilename of xlfFilenames) {
+    const xlfData = JSON.parse(
+      xmlJsConvert.xml2json(fs.readFileSync(xlfFilename), options)
+    );
+    goldetic.convertToJson(xlfData, jsonData);
+  }
+  const jsonFilename = "goldetic.json";
   fs.writeFileSync(jsonFilename, JSON.stringify(jsonData), (err) => {
     // Throws an error, you could also catch it here
     if (err) {
@@ -40,6 +47,20 @@ function xlfToJson(xlfFilename, jsonFilename) {
     }
     // Success case, the file was saved
     console.log(`File saved: ${jsonFilename}`);
+  });
+}
+
+function minimizeJson(inFilename) {
+  const jsonData = JSON.parse(fs.readFileSync(inFilename));
+  const minimized = goldetic.minimizeJson(jsonData);
+  const outFilename = getFileRoot(inFilename, ".json") + "-minimized.json";
+  fs.writeFileSync(outFilename, JSON.stringify(minimized), (err) => {
+    // Throws an error, you could also catch it here
+    if (err) {
+      throw err;
+    }
+    // Success case, the file was saved
+    console.log(`File saved: ${outFilename}`);
   });
 }
 

@@ -1,18 +1,35 @@
-Before doing a substring check, can split string by (punctuation,whitespace,词) and do equality check on the first string.
-Afterwords/Otherwise, the following must be done in this order:
+Covers English, French, Spanish, Portuguese, Chinese
 
 CHECK FIRST WITH NO AMBIGUITY
-  CLASSIFIER; EXISTENTIAL_MARKER; EXPLETIVE; INTERJECTION; PRENOUN; PREVERB
+  CLASSIFIER > clf,class,类
+  EXISTENTIAL_MARKER > exist,存在
+  EXPLETIVE > expl,填补
+  INTERJECTION > interj,叹
+  PRENOUN > pren,名词前
+  PREVERB > prev,动词前
+
 CHECK NEXT CAREFULLY TO AVOID CONFLATION
-  PARTICIPLE; PARTICLE
+  PARTICIPLE = part > ptcp,partici,分
+  PARTICLE = partic,q,疑问 > prt,particl,particu,marc,mark,助
+
 SOME BACK-AND-FORTH CHECKS TO UNTANGLE
-  DETERMINER; PRO-FORM
+  PRO-FORM > pro,interr,indf,pers,emph,poss,refl,recp
+    then
+  DETERMINER > det,art,def,indf,indef,dem,quant,num,定,冠,指示,数
+    then
+  PRO-FORM > 代,领,疑问
+
 CAN CHECK NOW THAT DETERMINER & PRO-FORM ARE CHECKED
-  ADJECTIVE; ADPOSITION; CONNECTIVE; NOUN
+  ADJECTIVE > adj,形
+  ADPOSITION > adp,pos,prep,置
+  CONNECTIVE > con,izer,isateur,izador,comp,rel,连
+  NOUN = n > noun,nom,ger,prop,subs,sus,名,体
+  
 CAN CHECK AFTER CONNECTIVE
-  ADVERB
+  ADVERB > adv,副
+  
 CHECK LAST
-  VERB
+  VERB = v,vd,vi,vt > cop,verb,trans,动
 
 
 ADJECTIVE
