@@ -1,0 +1,251 @@
+{
+  "Adjective": {
+    "adj": ["Adjective", "Adjetivo", "Adjectif"]
+  },
+  "Adposition": {
+    "adp": ["Adposition", "Adposição"],
+    "adpos": ["Adposición", "Adposition"],
+    "Postposition": {
+      "post": ["Postposition", "Postposición"],
+      "posp": ["Posposição"]
+    },
+    "Preposition": {
+      "prep": ["Preposition", "Preposición", "Preposição"],
+      "prép": ["Préposition"]
+    }
+  },
+  "Adverb": {
+    "adv": ["Adverb", "Adverbio", "Adverbe", "Advérbio"]
+  },
+  "Classifier": {
+    "clf": ["Classifier", "Clasificador", "Classificador"],
+    "class": ["Classificateur"],
+    "NounClassifier": {
+      "nclf": ["Noun classifier"],
+      "class.nom": ["Classificateur nominal"],
+      "clfnom": ["Classificador Nominal"]
+    }
+  },
+  "Connective": {
+    "conn": ["Connective", "Connecteur"],
+    "con": ["Conectivo"],
+    "CoordinatingConnective": {
+      "coordconn": ["Coordinating connective"],
+      "conn.coord": ["Connecteur coordonnant"],
+      "conjcoor": ["Conectivo coordenativo"],
+      "CorrelativeConnective": {
+        "correlconn": ["Correlative connective"],
+        "conn.corrél": ["Connecteur corrélatif"],
+        "concorr": ["Conjunção correlativa"]
+      }
+    },
+    "SubordinatingConnective": {
+      "subordconn": ["Subordinating connective"],
+      "conn.subord": ["Connecteur subordonnant"],
+      "consub": ["Conectivo subordenativo"],
+      "Adverbializer": {
+        "advlizer": ["Adverbializer"],
+        "adverbialisateur": ["Adverbialisateur"],
+        "advlizr": ["Adverbializador"]
+      },
+      "Complementizer": {
+        "comp": ["Complementizer"],
+        "compltr": ["Complémenteur"],
+        "conjcom": ["Complementizador"]
+      },
+      "Relativizer": {
+        "rel": ["Relativizer"],
+        "relativis": ["Relativiseur"],
+        "reltvzr": ["Relativizador"]
+      }
+    }
+  },
+  "Determiner": {
+    "det": ["Determiner", "Determinante"],
+    "dét": ["Déterminant"],
+    "Article": {
+      "art": ["Article", "Artículo", "Artigo"],
+      "DefiniteArticle": {
+        "def": ["Definite article"],
+        "déf": ["Artículo definido"],
+        "art.déf": ["Article défini"],
+        "artdef": ["Artigo definido"]
+      },
+      "IndefiniteArticle": {
+        "indf": ["Indefinite article", "Artículo indefinido"],
+        "art.indéf": ["Article indéfini"],
+        "artindf": ["Artigo indefinido"]
+      }
+    },
+    "Demonstrative": {
+      "dem": ["Demonstrative", "Demonstrativo"],
+      "dém": ["Démonstratif"]
+    },
+    "Quantifier": {
+      "quant": ["Quantifier", "Quantificateur", "Quantificador"],
+      "Numeral": {
+        "num": ["Numeral", "Numéral"],
+        "CardinalNumeral": {
+          "cardnum": ["Cardinal numeral"],
+          "num.card": ["Numéral cardinal"],
+          "numcar": ["Numeral cardinal"]
+        },
+        "DistributiveNumeral": {
+          "distrnum": ["Distributive numeral"],
+          "num.distr": ["Numéral distributif"],
+          "numdistr": ["Numeral Distributivo"]
+        },
+        "MultiplicativeNumeral": {
+          "multipnum": ["Multiplicative numeral"],
+          "num.mult": ["Numéral multiplicatif"],
+          "nummulti": ["Numeral multiplicativo"]
+        },
+        "OrdinalNumeral": {
+          "ordnum": ["Ordinal numeral"],
+          "num.ord": ["Numéral ordinal"],
+          "numord": ["Numeral ordinal"]
+        },
+        "PartitiveNumeral": {
+          "partnum": ["Partitive numeral"],
+          "num.fract": ["Numéral fractionnaire"],
+          "numpar": ["Numeral partitivo"]
+        }
+      }
+    }
+  },
+  "ExistentialMarker": {
+    "existmrkr": ["Existential marker"],
+    "marq.exist": ["Marqueur existentiel"],
+    "marcexist": ["Marcador existencial"]
+  },
+  "Expletive": {
+    "expl": ["Expletive", "Explétif", "Expletivo"]
+  },
+  "Interjection": {
+    "interj": ["Interjection", "Interjección", "Interjeição"]
+  },
+  "Noun": {
+    "n": ["Noun", "Nom", "Nome"],
+    "sus": ["Nombre"],
+    "Nominal": {
+      "nom": ["Nominal"],
+      "Gerund": {
+        "ger": ["Gerund", "Gérundif", "Gerúndio"]
+      }
+    },
+    "ProperNoun": {
+      "nprop": ["Proper Noun", "Nome Próprio"],
+      "n.pr": ["Nom propre"]
+    },
+    "Substantive": {
+      "subs": ["Substantive", "Substantivo"],
+      "subst": ["Substantif"]
+    }
+  },
+  "Participle": {
+    "ptcp": ["Participle", "Participio"],
+    "part": ["Participe", "Particípio"]
+  },
+  "Particle": {
+    "prt": ["Particle", "Partícula"],
+    "partic": ["Particule"],
+    "NominalParticle": {
+      "nomprt": ["Nominal particle"],
+      "partic.nom": ["Particule nominale"],
+      "prtnom": ["Partícula nominal"]
+    },
+    "QuestionParticle": {
+      "q": ["Question particle", "Marcador interrogativo"],
+      "partic.interr": ["Particule interrogative"]
+    },
+    "VerbalParticle": {
+      "verbprt": ["Verbal particle"],
+      "partic.verb": ["Particule verbale"],
+      "prtverb": ["Partícula verbal"]
+    }
+  },
+  "Prenoun": {
+    "prenoun": ["Prenoun"],
+    "pren": ["Prenome"]
+  },
+  "Preverb": {
+    "preverb": ["Preverb"]
+  },
+  "Pro-form": {
+    "pro-form": ["Pro-form"],
+    "proforme": ["Proforme"],
+    "proforma": ["Proforma"],
+    "InterrogativeProform": {
+      "interrog": ["Interrogative pro-form"],
+      "pron.int": ["Pronom interrogatif"],
+      "prointerrog": ["Proforma interrogativa"]
+    },
+    "Pro-adjective": {
+      "pro-adj": ["Pro-adjective", "Pró-adjetivo"]
+    },
+    "Pro-adverb": {
+      "pro-adv": ["Pro-adverb"]
+    },
+    "Pronoun": {
+      "pro": ["Pronoun", "Pronombre"],
+      "pron": ["Pronom", "Pronome"],
+      "IndefinitePronoun": {
+        "indfpro": ["Indefinite pronoun", "Pronombre indefinido"],
+        "pron.indéf": ["Pronom indéfini"],
+        "pronindf": ["Pronome indefinido"]
+      },
+      "PersonalPronoun": {
+        "pers": ["Personal pronoun", "Pronombre personal"],
+        "pron.pers": ["Pronom personnel"],
+        "pronpes": ["Pronome pessoal"],
+        "EmphaticPronoun": {
+          "emph": ["Emphatic pronoun"],
+          "pron.emph": ["Pronom emphatique"],
+          "pronenf": ["Pronome enfático"]
+        },
+        "PossessivePronoun": {
+          "poss": ["Possessive pronoun"],
+          "pos": ["pronombre posesivo"],
+          "pron.poss": ["Pronom possessif"],
+          "pronposs": ["Pronome possessivo"]
+        },
+        "ReflexivePronoun": {
+          "refl": ["Reflexive pronoun"],
+          "pro.refl": ["pronombre reflexivo"],
+          "pron.réfl": ["Pronom réfléchi"],
+          "pronrefl": ["Pronome reflexivo"]
+        }
+      },
+      "ReciprocalPronoun": {
+        "recp": ["Reciprocal pronoun"],
+        "pron.réc": ["Pronom réciproque"],
+        "pronrecp": ["Pronome recíproco"]
+      },
+      "RelativePronoun": {
+        "relpro": ["Relative pronoun", "Pronombre relativo"],
+        "pron.rel": ["Pronom relatif"],
+        "pronrel": ["Pronome relativo"]
+      }
+    }
+  },
+  "Verb": {
+    "v": ["Verb", "Verbo", "Verbe"],
+    "Copulative": {
+      "cop": ["Copulative verb", "Verbo copulativo"],
+      "v.cop": ["Verbe copulatif"]
+    },
+    "DitransitiveVerb": {
+      "vd": ["Ditransitive verb"],
+      "vb": ["Verbo bitransitivo"],
+      "v.bi-tr": ["Verbe bitransitif"]
+    },
+    "IntransitiveVerb": {
+      "vi": ["Intransitive verb", "Verbo intransitivo"],
+      "v.i": ["Verbe intransitif"]
+    },
+    "TransitiveVerb": {
+      "vt": ["Transitive verb", "Verbo transitivo"],
+      "v.tr": ["Verbe transitif"]
+    }
+  }
+}

@@ -5,32 +5,26 @@
       "equals": ["сч"]
     },
     "ExistentialMarker": {
-      "contains": ["exist", "экз", "存在"],
-      "equals": []
+      "contains": ["exist", "экз", "存在"]
     },
     "Expletive": {
-      "contains": ["expl", "форм", "填补"],
-      "equals": []
+      "contains": ["expl", "форм", "填补"]
     },
     "Interjection": {
-      "contains": ["interj", "межд", "叹"],
-      "equals": []
+      "contains": ["interj", "межд", "叹"]
     },
     "Noun": {
-      "contains": ["prop"],
-      "equals": []
+      "contains": ["prop"]
     },
     "Participle": {
       "contains": ["ptcp", "partici", "прич"],
       "equals": ["part", "分", "分词"]
     },
     "Prenoun": {
-      "contains": ["pren", "名词前"],
-      "equals": []
+      "contains": ["pren", "名词前"]
     },
     "Preverb": {
-      "contains": ["prev", "动词前"],
-      "equals": []
+      "contains": ["prev", "动词前"]
     }
   },
 
@@ -43,8 +37,7 @@
 
   {
     "Determiner": {
-      "contains": ["指示"],
-      "equals": []
+      "contains": ["指示"]
     }
   },
 
@@ -86,35 +79,22 @@
         "定",
         "冠",
         "数"
-      ],
-      "equals": []
+      ]
     }
   },
 
   {
     "Adposition": {
-      "contains": ["adp", "pos", "prep", "лог", "предл", "置"],
-      "equals": []
+      "contains": ["adp", "pos", "prep", "лог", "предл", "置"]
     }
   },
 
   {
     "Adjective": {
-      "contains": ["adj", "прил", "形"],
-      "equals": []
+      "contains": ["adj", "прил", "形"]
     },
     "Connective": {
-      "contains": [
-        "com",
-        "con",
-        "iz",
-        "isateur",
-        "rel",
-        "изатор",
-        "союз",
-        "连"
-      ],
-      "equals": []
+      "contains": ["com", "con", "iz", "isateur", "rel", "изатор", "союз", "连"]
     },
     "Noun": {
       "contains": [
@@ -136,8 +116,7 @@
 
   {
     "Adverb": {
-      "contains": ["adv", "нареч", "副"],
-      "equals": []
+      "contains": ["adv", "нареч", "副"]
     }
   },
 

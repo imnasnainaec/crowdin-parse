@@ -1,5 +1,8 @@
 {
-  "Adjective": { "prefix": ["形", "adj", "прила"], "equals": ["прил"] },
+  "Adjective": {
+    "prefix": ["形", "adj", "прила"],
+    "equals": ["прил"]
+  },
   "Adposition": {
     "prefix": [
       "后",
@@ -97,8 +100,14 @@
     "prefix": ["存", "эк", "exi", "marq", "marce", "marcador e"],
     "equals": []
   },
-  "Expletive": { "prefix": ["ф", "填", "exp"], "equals": [] },
-  "Interjection": { "prefix": ["叹", "меж", "interj"], "equals": [] },
+  "Expletive": {
+    "prefix": ["ф", "填", "exp"],
+    "equals": []
+  },
+  "Interjection": {
+    "prefix": ["叹", "меж", "interj"],
+    "equals": []
+  },
   "Noun": {
     "prefix": [
       "g",
@@ -150,8 +159,14 @@
     ],
     "equals": ["q", "partic", "во", "疑问"]
   },
-  "Prenoun": { "prefix": ["名词前", "pren"], "equals": [] },
-  "Preverb": { "prefix": ["动词前", "prev"], "equals": [] },
+  "Prenoun": {
+    "prefix": ["名词前", "pren"],
+    "equals": []
+  },
+  "Preverb": {
+    "prefix": ["动词前", "prev"],
+    "equals": []
+  },
   "Pro-form": {
     "prefix": [
       "л",

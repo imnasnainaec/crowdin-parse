@@ -190,7 +190,10 @@
     "pren": ["Prenome"],
     "名词前词": ["名词前词"]
   },
-  "Preverb": { "preverb": ["Preverb"], "动词前词": ["动词前词"] },
+  "Preverb": {
+    "preverb": ["Preverb"],
+    "动词前词": ["动词前词"]
+  },
   "Pro-form": {
     "interrog": ["Interrogative pro-form"],
     "pro-adj": ["Pro-adjective", "Pró-adjetivo"],

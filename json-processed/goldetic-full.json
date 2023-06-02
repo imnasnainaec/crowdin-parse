@@ -1,0 +1,358 @@
+{
+  "Adjective": {
+    "adj": ["Adjective", "Adjetivo", "Adjectif"],
+    "прил": ["прилагательное"],
+    "形": ["形容词"]
+  },
+  "Adposition": {
+    "Postposition": {
+      "post": ["Postposition", "Postposición"],
+      "posp": ["Posposição"],
+      "послелог": ["послелог"],
+      "后置": ["后置词"]
+    },
+    "Preposition": {
+      "prep": ["Preposition", "Preposición", "Preposição"],
+      "prép": ["Préposition"],
+      "предл": ["предлог"],
+      "前置": ["前置词"]
+    },
+    "adp": ["Adposition", "Adposição"],
+    "adpos": ["Adposición", "Adposition"],
+    "Прилог": ["Прилог"],
+    "位置": ["位置词"]
+  },
+  "Adverb": {
+    "adv": ["Adverb", "Adverbio", "Adverbe", "Advérbio"],
+    "нареч": ["наречие"],
+    "副": ["副词"]
+  },
+  "Classifier": {
+    "NounClassifier": {
+      "nclf": ["Noun classifier"],
+      "class.nom": ["Classificateur nominal"],
+      "clfnom": ["Classificador Nominal"],
+      "сч. сл": ["Классификатор"],
+      "名词类別词": ["名词类別词"]
+    },
+    "clf": ["Classifier", "Clasificador", "Classificador"],
+    "class": ["Classificateur"],
+    "сч.сл": ["Классификатор"],
+    "类别": ["类别词"]
+  },
+  "Connective": {
+    "CoordinatingConnective": {
+      "CorrelativeConnective": {
+        "correlconn": ["Correlative connective"],
+        "conn.corrél": ["Connecteur corrélatif"],
+        "concorr": ["Conjunção correlativa"],
+        "парн.союз": ["Парный союз"],
+        "关系连词": ["关系连词"]
+      },
+      "coordconn": ["Coordinating connective"],
+      "conn.coord": ["Connecteur coordonnant"],
+      "conjcoor": ["Conectivo coordenativo"],
+      "соч.союз": ["Сочинительный союз"],
+      "并列连词": ["并列连词"]
+    },
+    "SubordinatingConnective": {
+      "Adverbializer": {
+        "advlizer": ["Adverbializer", "Адвербиализатор"],
+        "adverbialisateur": ["Adverbialisateur"],
+        "advlizr": ["Adverbializador"],
+        "副词化连词": ["副词化连词"]
+      },
+      "Complementizer": {
+        "comp": ["Complementizer"],
+        "compltr": ["Complémenteur"],
+        "conjcom": ["Complementizador"],
+        "изъясн.союз": ["Изъяснительный союз"],
+        "补语连词": ["补语连词"]
+      },
+      "Relativizer": {
+        "rel": ["Relativizer"],
+        "relativis": ["Relativiseur"],
+        "reltvzr": ["Relativizador"],
+        "отн.союз": ["Относительный союз"],
+        "关系从句连词": ["关系从句连词"]
+      },
+      "subordconn": ["Subordinating connective"],
+      "conn.subord": ["Connecteur subordonnant"],
+      "consub": ["Conectivo subordenativo"],
+      "подч.союз": ["Подчинительный союз"],
+      "从属连词": ["从属连词"]
+    },
+    "conn": ["Connective", "Connecteur"],
+    "con": ["Conectivo"],
+    "союз": ["Союз"],
+    "连": ["连词"]
+  },
+  "Determiner": {
+    "Article": {
+      "DefiniteArticle": {
+        "def": ["Definite article"],
+        "déf": ["Artículo definido"],
+        "art.déf": ["Article défini"],
+        "artdef": ["Artigo definido"],
+        "опр.арт": ["Определённый артикль"],
+        "定冠词": ["定冠词"]
+      },
+      "IndefiniteArticle": {
+        "indf": ["Indefinite article", "Artículo indefinido"],
+        "art.indéf": ["Article indéfini"],
+        "artindf": ["Artigo indefinido"],
+        "неопр.арт": ["Неопределённый артикль"],
+        "不定冠词": ["不定冠词"]
+      },
+      "art": ["Article", "Artículo", "Artigo"],
+      "арт": ["Артикль"],
+      "冠": ["冠词"]
+    },
+    "Demonstrative": {
+      "dem": ["Demonstrative", "Demonstrativo"],
+      "dém": ["Démonstratif"],
+      "указат": ["Указательное слово"],
+      "指示代": ["指示代词"]
+    },
+    "Quantifier": {
+      "Numeral": {
+        "CardinalNumeral": {
+          "cardnum": ["Cardinal numeral"],
+          "num.card": ["Numéral cardinal"],
+          "numcar": ["Numeral cardinal"],
+          "кол.числ": ["Количественное числительное"],
+          "基数词": ["基数词"]
+        },
+        "DistributiveNumeral": {
+          "distrnum": ["Distributive numeral"],
+          "num.distr": ["Numéral distributif"],
+          "numdistr": ["Numeral Distributivo"],
+          "разд.числ": ["Разделительное числительное"],
+          "分配数词": ["分配数词"]
+        },
+        "MultiplicativeNumeral": {
+          "multipnum": ["Multiplicative numeral"],
+          "num.mult": ["Numéral multiplicatif"],
+          "nummulti": ["Numeral multiplicativo"],
+          "кратн.числ": ["Кратное числительное"],
+          "倍数词": ["倍数词"]
+        },
+        "OrdinalNumeral": {
+          "ordnum": ["Ordinal numeral"],
+          "num.ord": ["Numéral ordinal"],
+          "numord": ["Numeral ordinal"],
+          "пор.числ": ["Порядковое числительное"],
+          "序数词": ["序数词"]
+        },
+        "PartitiveNumeral": {
+          "partnum": ["Partitive numeral"],
+          "num.fract": ["Numéral fractionnaire"],
+          "numpar": ["Numeral partitivo"],
+          "дробн.числ": ["Дробное числительное"],
+          "部分数词": ["部分数词"]
+        },
+        "num": ["Numeral", "Numéral"],
+        "числ": ["Числительное"],
+        "数": ["数词"]
+      },
+      "quant": ["Quantifier", "Quantificateur", "Quantificador"],
+      "квантиф": ["Квантификатор"],
+      "数量词": ["数量词"]
+    },
+    "det": ["Determiner", "Determinante"],
+    "dét": ["Déterminant"],
+    "опр": ["Определитель"],
+    "限定": ["限定词"]
+  },
+  "ExistentialMarker": {
+    "existmrkr": ["Existential marker"],
+    "marq.exist": ["Marqueur existentiel"],
+    "marcexist": ["Marcador existencial"],
+    "экз.марк": ["Экзистеницальный маркер"],
+    "存在标记": ["存在标记"]
+  },
+  "Expletive": {
+    "expl": ["Expletive", "Explétif", "Expletivo"],
+    "форм.сл": ["Формальное слово"],
+    "填补词": ["填补词"]
+  },
+  "Interjection": {
+    "interj": ["Interjection", "Interjección", "Interjeição"],
+    "межд": ["Междометие"],
+    "叹": ["叹词"]
+  },
+  "Noun": {
+    "Nominal": {
+      "Gerund": {
+        "ger": ["Gerund", "Gérundif", "Gerúndio", "Герундий"],
+        "动名词": ["动名词"]
+      },
+      "nom": ["Nominal"],
+      "имя": ["Имя"],
+      "名词": ["名词"]
+    },
+    "ProperNoun": {
+      "nprop": ["Proper Noun", "Nome Próprio"],
+      "n.pr": ["Nom propre"],
+      "собств": ["Имя собственное"],
+      "专有名": ["专有名词"]
+    },
+    "Substantive": {
+      "subs": ["Substantive", "Substantivo", "По существу"],
+      "subst": ["Substantif"],
+      "体词": ["体词"]
+    },
+    "n": ["Noun", "Nom", "Nome"],
+    "sus": ["Nombre"],
+    "сущ": ["существительное"],
+    "名": ["名词"]
+  },
+  "Participle": {
+    "ptcp": ["Participle", "Participio"],
+    "part": ["Participe", "Particípio"],
+    "прич": ["Причастие"],
+    "分词": ["分词"]
+  },
+  "Particle": {
+    "NominalParticle": {
+      "nomprt": ["Nominal particle"],
+      "partic.nom": ["Particule nominale"],
+      "prtnom": ["Partícula nominal"],
+      "ном.част": ["Номинативная частица"],
+      "名词性助词": ["名词性助词"]
+    },
+    "QuestionParticle": {
+      "q": ["Question particle", "Marcador interrogativo"],
+      "partic.interr": ["Particule interrogative"],
+      "во": ["Вопросительная частица"],
+      "疑问": ["疑问助词"]
+    },
+    "VerbalParticle": {
+      "verbprt": ["Verbal particle"],
+      "partic.verb": ["Particule verbale"],
+      "prtverb": ["Partícula verbal"],
+      "гл.част": ["Глагольная частица"],
+      "动词性助词": ["动词性助词"]
+    },
+    "prt": ["Particle", "Partícula"],
+    "partic": ["Particule"],
+    "част": ["Частица"],
+    "助词": ["助词"]
+  },
+  "Prenoun": {
+    "prenoun": ["Prenoun"],
+    "pren": ["Prenome"],
+    "名词前词": ["名词前词"]
+  },
+  "Preverb": {
+    "preverb": ["Preverb"],
+    "动词前词": ["动词前词"]
+  },
+  "Pro-form": {
+    "InterrogativeProform": {
+      "interrog": ["Interrogative pro-form"],
+      "pron.int": ["Pronom interrogatif"],
+      "prointerrog": ["Proforma interrogativa"],
+      "вопр": ["Вопросительное местоименное слово"],
+      "疑问词": ["疑问替代词"]
+    },
+    "Pro-adjective": {
+      "pro-adj": ["Pro-adjective", "Pró-adjetivo"],
+      "代形容词": ["代形容词"]
+    },
+    "Pro-adverb": {
+      "pro-adv": ["Pro-adverb"],
+      "代副词": ["代副词"]
+    },
+    "Pronoun": {
+      "IndefinitePronoun": {
+        "indfpro": ["Indefinite pronoun", "Pronombre indefinido"],
+        "pron.indéf": ["Pronom indéfini"],
+        "pronindf": ["Pronome indefinido"],
+        "неопр.мест": ["Неопределённое местоимение"],
+        "不定代词": ["不定代词"]
+      },
+      "PersonalPronoun": {
+        "EmphaticPronoun": {
+          "emph": ["Emphatic pronoun"],
+          "pron.emph": ["Pronom emphatique"],
+          "pronenf": ["Pronome enfático"],
+          "эмф.мест": ["Эмфатическое местоимение"],
+          "强调代词": ["强调代词"]
+        },
+        "PossessivePronoun": {
+          "poss": ["Possessive pronoun"],
+          "pos": ["pronombre posesivo"],
+          "pron.poss": ["Pronom possessif"],
+          "pronposs": ["Pronome possessivo"],
+          "прит.мест": ["Притяжательное местоимение"],
+          "领有": ["领有代词"]
+        },
+        "ReflexivePronoun": {
+          "refl": ["Reflexive pronoun"],
+          "pro.refl": ["pronombre reflexivo"],
+          "pron.réfl": ["Pronom réfléchi"],
+          "pronrefl": ["Pronome reflexivo"],
+          "возвр.мест": ["Возвратное местоимение"],
+          "反身代词": ["反身代词"]
+        },
+        "pers": ["Personal pronoun", "Pronombre personal"],
+        "pron.pers": ["Pronom personnel"],
+        "pronpes": ["Pronome pessoal"],
+        "личн.мест": ["Личное местоимение"],
+        "人称代": ["人称代词"]
+      },
+      "ReciprocalPronoun": {
+        "recp": ["Reciprocal pronoun"],
+        "pron.réc": ["Pronom réciproque"],
+        "pronrecp": ["Pronome recíproco"],
+        "взаимн.мест": ["Взаимное местоимение"],
+        "相互代词": ["相互代词"]
+      },
+      "RelativePronoun": {
+        "relpro": ["Relative pronoun", "Pronombre relativo"],
+        "pron.rel": ["Pronom relatif"],
+        "pronrel": ["Pronome relativo"],
+        "относ.мест": ["Относительное местоимение"],
+        "关系代词": ["关系代词"]
+      },
+      "pro": ["Pronoun", "Pronombre"],
+      "pron": ["Pronom", "Pronome"],
+      "мест": ["местоимение"],
+      "代": ["代词"]
+    },
+    "pro-form": ["Pro-form"],
+    "proforme": ["Proforme"],
+    "proforma": ["Proforma"],
+    "местоименное слово": ["Местоименное слово"],
+    "替代词": ["替代词"]
+  },
+  "Verb": {
+    "Copulative": {
+      "cop": ["Copulative verb", "Verbo copulativo"],
+      "v.cop": ["Verbe copulatif"],
+      "гл.-связ": ["глагол-связка"],
+      "系动词": ["系动词"]
+    },
+    "DitransitiveVerb": {
+      "vd": ["Ditransitive verb"],
+      "vb": ["Verbo bitransitivo"],
+      "v.bi-tr": ["Verbe bitransitif"],
+      "дитр.гл": ["Дитранзитивный глагол"],
+      "双及物动": ["双及物动词"]
+    },
+    "IntransitiveVerb": {
+      "vi": ["Intransitive verb", "Verbo intransitivo", "Непереходный глагол"],
+      "v.i": ["Verbe intransitif"],
+      "不及物动": ["不及物动词"]
+    },
+    "TransitiveVerb": {
+      "vt": ["Transitive verb", "Verbo transitivo", "Переходный глагол"],
+      "v.tr": ["Verbe transitif"],
+      "及物动": ["及物动词"]
+    },
+    "v": ["Verb", "Verbo", "Verbe"],
+    "гл": ["Глагол"],
+    "动": ["动词"]
+  }
+}
