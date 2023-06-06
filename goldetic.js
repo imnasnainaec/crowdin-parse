@@ -1,29 +1,38 @@
 exports.convertToJson = function (xlfData, jsonData) {
-  xlfData.xliff.file.body["group"].map((g) => addGroup(g, jsonData));
+  xlfData.xliff.file.body["group"].map((g) => addGroup(g, jsonData, true));
 };
 
-function addGroup(g, jsonData) {
+function addGroup(g, jsonData, flatten = false) {
   const groupName = g._attributes.id.split("_").pop();
   let section = jsonData;
-  if (section[groupName] === undefined) {
-    section[groupName] = {};
+  if (flatten) {
+    if (section[groupName] == undefined) {
+      section[groupName] = [];
+    }
+  } else {
+    if (section[groupName] === undefined) {
+      section[groupName] = {};
+    }
+    section = section[groupName];
   }
-  section = section[groupName];
-  parseGroup(g, section); //, true);
+  parseGroup(g, section, flatten ? groupName : undefined);
+  if (flatten) {
+    section[groupName].sort();
+  }
 }
 
-function parseGroup(g, section, flatten) {
+function parseGroup(g, section, key) {
   const subgroup = g["group"];
   if (subgroup) {
     if (subgroup.length) {
-      if (flatten) {
-        subgroup.map((sub) => parseGroup(sub, section, flatten));
+      if (key) {
+        subgroup.map((sub) => parseGroup(sub, section, key));
       } else {
         subgroup.map((sub) => addGroup(sub, section));
       }
     } else {
-      if (flatten) {
-        parseGroup(subgroup, section, flatten);
+      if (key) {
+        parseGroup(subgroup, section, key);
       } else {
         addGroup(subgroup, section);
       }
@@ -34,23 +43,42 @@ function parseGroup(g, section, flatten) {
   if (tu && tu.length) {
     const sKey = tu[0]["source"]._text;
     if (sKey) {
-      if (section[sKey] === undefined) {
-        section[sKey] = [];
-      }
       const sVal = tu[1]["source"]._text;
-      if (!section[sKey].includes(sVal)) {
-        section[sKey].push(sVal);
+      if (key) {
+        if (!section[key].includes(sKey)) {
+          section[key].push(sKey);
+        }
+        if (!section[key].includes(sVal)) {
+          section[key].push(sVal);
+        }
+      } else {
+        if (section[sKey] === undefined) {
+          section[sKey] = [];
+        }
+        if (!section[sKey].includes(sVal)) {
+          section[sKey].push(sVal);
+        }
       }
     }
     const tKey = tu[0]["target"]._text;
     if (tKey) {
-      if (section[tKey] === undefined) {
-        section[tKey] = [];
+      if (key) {
+        if (!section[key].includes(tKey)) {
+          section[key].push(tKey);
+        }
+      } else {
+        if (section[tKey] === undefined) {
+          section[tKey] = [];
+        }
       }
-      if (tu.length > 1) {
-        const target = tu[1]["target"];
-        if (target._attributes.state !== "needs-translation") {
-          const tVal = target._text;
+      const target = tu[1]["target"];
+      if (target._attributes.state !== "needs-translation") {
+        const tVal = target._text;
+        if (key) {
+          if (!section[key].includes(tVal)) {
+            section[key].push(tVal);
+          }
+        } else {
           if (!section[tKey].includes(tVal)) {
             section[tKey].push(tVal);
           }
@@ -66,13 +94,7 @@ exports.minimizeJson = function (jsonData) {
   const keys = Object.keys(jsonData);
   for (const key of keys) {
     mini[key] = { all: [], contains: [], prefix: [], resolved: [] };
-    const group = jsonData[key];
-    for (const k of Object.keys(group)) {
-      mini[key].all.push(
-        k.toLocaleLowerCase(),
-        ...group[k].map((item) => item.toLocaleLowerCase())
-      );
-    }
+    jsonData[key].map((item) => mini[key].all.push(item.toLocaleLowerCase()));
     mini[key].all = [...new Set(mini[key].all)];
     mini[key].maxLength = Math.max(...mini[key].all.map((s) => s.length));
     maxLength = Math.max(maxLength, mini[key].maxLength);
@@ -95,10 +117,10 @@ exports.minimizeJson = function (jsonData) {
 
   for (const key of keys) {
     mini[key] = {
-      prefix: mini[key].prefix,
-      equals: mini[key].all.filter(
-        (item) => !mini[key].resolved.includes(item)
-      ),
+      prefix: mini[key].prefix.sort(),
+      equals: mini[key].all
+        .filter((item) => !mini[key].resolved.includes(item))
+        .sort(),
     };
   }
 
